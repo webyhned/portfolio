@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prohlášení o odpovědnosti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-bottom: 1.5rem;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .back-button:hover {
+            background: #2980b9;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            word-wrap: break-word;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 1.5rem 0 0.8rem 0;
+            font-size: 1.4rem;
+            word-wrap: break-word;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin: 1.2rem 0 0.6rem 0;
+            font-size: 1.2rem;
+            word-wrap: break-word;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: left;
+            word-wrap: break-word;
+        }
+        
+        ul {
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            word-wrap: break-word;
+        }
+        
+        .section {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #f39c12;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        
+        .info-box {
+            background: #e8f4fd;
+            border: 1px solid #b8daff;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.5rem 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        /* Mobile first - velmi malé obrazovky */
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            
+            .container {
+                padding: 10px;
+                margin: 5px;
+                box-shadow: none;
+            }
+            
+            .header {
+                padding: 1rem 0;
+                margin: -10px -10px 1rem -10px;
+                border-radius: 0;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+                margin: 1.2rem 0 0.6rem 0;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .back-button {
+                padding: 10px 15px;
+                font-size: 15px;
+                margin-bottom: 1rem;
+            }
+            
+            .warning-box,
+            .info-box {
+                padding: 0.8rem;
+                margin: 0.8rem 0;
+            }
+            
+            ul {
+                padding-left: 1.2rem;
+            }
+        }
+        
+        /* Střední obrazovky */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+        
+        /* Velké obrazovky */
+        @media (min-width: 769px) {
+            .container {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        /* Zajištění čitelnosti na velmi malých zařízeních */
+        @media (max-width: 360px) {
+            body {
+                font-size: 14px;
+            }
+            
+            .container {
+                padding: 8px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 0.8rem;
+            }
+            
+            .warning-box,
+            .info-box {
+                padding: 0.7rem;
+            }
+        }
+        
+        /* Zvýraznění důležitých částí */
+        strong {
+            color: #2c3e50;
+        }
+        
+        /* Zlepšení čitelnosti dlouhých slov */
+        .break-word {
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        /* Ikony pro důležité sekce */
+        .section-icon {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Prohlášení o odpovědnosti</h1>
+            <p>Disclaimer</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-button">← Zpět na hlavní stránku</a>
+
+        <div class="section">
+            <h2><span class="section-icon">⚠️</span> Omezení odpovědnosti za obsah</h2>
+            <p>Veškerý obsah na těchto webových stránkách je poskytován v dobré víře a pro obecné informační účely. I když se snažíme zajistit aktuálnost, úplnost a správnost informací, nemůžeme zaručit, že veškerý obsah bude vždy aktuální, úplný a bez chyb.</p>
+            
+            <div class="warning-box">
+                <p><strong>Upozornění:</strong> Informace na tomto webu mohou být změněny bez předchozího upozornění. Nepřebíráme odpovědnost za jakékoli nepřesnosti nebo opomenutí v obsahu.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">🔗</span> Externí odkazy</h2>
+            <p>Naše webové stránky mohou obsahovat odkazy na externí webové stránky, které nejsou pod naší kontrolou. Nemáme žádný vliv na obsah těchto stránek a nenese odpovědnost za jejich obsah.</p>
+            
+            <div class="info-box">
+                <p><strong>Důležité:</strong> Poskytnutí odkazu neznamená automaticky, že schvalujeme obsah těchto stránek. Externí stránky mají své vlastní zásady ochrany osobních údajů a podmínky použití.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">🎓</span> Odborné informace</h2>
+            <p>Informace na těchto webových stránkách nemají charakter odborné rady a neměly by být považovány za náhradu odborného poradenství.</p>
+            
+            <div class="warning-box">
+                <p><strong>Důrazně doporučujeme:</strong> Pro konkrétní odbornou radu se vždy obraťte na kvalifikovaného odborníka v příslušném oboru.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">⚡</span> Technická dostupnost</h2>
+            <p>Snažíme se zajistit, aby webové stránky byly dostupné nepřetržitě. Nemůžeme však zaručit nepřerušený provoz a nenese odpovědnost za výpadky způsobené technickými problémy nebo údržbou.</p>
+            
+            <div class="info-box">
+                <p><strong>Plánované výpadky:</strong> O významných plánovaných výpadcích se snažíme informovat předem prostřednictvím našich komunikačních kanálů.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">©️</span> Autorská práva</h2>
+            <p>Veškerý obsah na těchto webových stránkách, včetně textů, obrázků, grafiky a log, je chráněn autorskými právy.</p>
+            
+            <div class="warning-box">
+                <p><strong>Upozornění:</strong> Jakékoliv neoprávněné použití, reprodukce nebo šíření obsahu bez předchozího písemného souhlasu provozovatele je zakázáno a může být právně postihováno.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">📝</span> Změny obsahu</h2>
+            <p>Provozovatel si vyhrazuje právo měnit, upravovat nebo odstraňovat obsah webových stránek kdykoliv bez předchozího upozornění.</p>
+            
+            <div class="info-box">
+                <p><strong>Aktualizace:</strong> Pravidelně kontrolujeme a aktualizujeme obsah webu, abychom zajistili jeho relevanci a přesnost.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="section-icon">ℹ️</span> Další informace</h2>
+            <p>Pro více informací o používání těchto webových stránek nebo pokud máte jakékoli dotazy týkající se tohoto prohlášení, nás prosím kontaktujte.</p>
+            
+            <div class="info-box">
+                <p><strong>Kontakt:</strong> Veškeré dotazy směřujte na naši kontaktní adresu uvedenou v sekci kontakty.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Poslední aktualizace: 13.10.2025 | stavl s.r.o</p>
+        </div>
+    </div>
+</body>
+</html>
